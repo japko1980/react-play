@@ -652,6 +652,78 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "freemrl",
+      "name": "Jannik Schmidtke",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66525499?v=4",
+      "profile": "https://github.com/FreemRL",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "saddam-selise",
+      "name": "Md. Saddam Hossain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/113901460?v=4",
+      "profile": "https://github.com/saddam-selise",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "janvi01",
+      "name": "Janvi Bajoria",
+      "avatar_url": "https://avatars.githubusercontent.com/u/34344234?v=4",
+      "profile": "https://github.com/janvi01",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "chhakuli123",
+      "name": "Chhakuli Zingare",
+      "avatar_url": "https://avatars.githubusercontent.com/u/103095813?v=4",
+      "profile": "http://chhakuli-zingare.netlify.app/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "clevercoderjoy",
+      "name": "clevercoderjoy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74505057?v=4",
+      "profile": "http://clevercoderjoy.bio.link",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "priyankarpal",
+      "name": "Priyankar Pal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/88102392?v=4",
+      "profile": "http://priyank.live",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Akshaygore1",
+      "name": "Akshay Gore",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92959398?v=4",
+      "profile": "https://github.com/Akshaygore1",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "saddamhr",
+      "name": "Md. Saddam Hossain",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44530098?v=4",
+      "profile": "https://medium.com/@saddamhr",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -660,5 +732,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true,
-  "commitConvention": "angular"
+  "commitConvention": "angular",
+  "commitType": "docs"
 }

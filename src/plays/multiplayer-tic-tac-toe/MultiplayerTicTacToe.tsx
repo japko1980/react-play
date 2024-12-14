@@ -50,9 +50,10 @@ function MultiplayerTicTacToe(props: any) {
       if (pos === 'cross' || pos === 'circle') {
         count++;
       }
-      if (GAME_ARRAY.length === 9 && GAME_ARRAY.indexOf('') < 0) {
+      if (count > 9 || (GAME_ARRAY.length === 9 && GAME_ARRAY.indexOf('')) < 0) {
         setFinalMessage('Game Draw!');
         setIsFinished(true);
+        count = 0;
       }
     });
 
@@ -85,13 +86,13 @@ function MultiplayerTicTacToe(props: any) {
     <>
       <div className="play-details">
         <PlayHeader play={props} />
-        <div className="flex justify-center play-details-body">
+        <div className="grid items-center justify-center play-details-body">
           {/* Your Code Starts Here */}
           <div>
             <h1 className="text-2xl text-center md:text-3xl">Multiplayer Tic Tac Toe</h1>
             <ButtonGroup setIsCross={setIsCross} />
 
-            <section className="flex items-center justify-center">
+            <section className="flex items-center !justify-center">
               <ToastContainer />
               <main>
                 <div>

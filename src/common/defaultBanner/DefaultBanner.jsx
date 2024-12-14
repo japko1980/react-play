@@ -7,7 +7,8 @@ import { MdManageSearch } from 'react-icons/md';
 import { UMAMI_EVENTS } from 'constants';
 
 const DefaultBanner = () => {
-  const { data } = useFetch('https://api.github.com/repos/reactplay/react-play');
+  const { data } = useFetch(`${process.env.REACT_APP_PLAY_API_URL}/react-play`);
+  const formatter = Intl.NumberFormat('en', { notation: 'compact' });
 
   return (
     <div>
@@ -36,15 +37,19 @@ const DefaultBanner = () => {
           <span className="btn-label">
             GitHub{' '}
             <div className="label-info-more">
-              <FiStar /> <div className="more-label">{data.stargazers_count}</div>
+              <FiStar /> <div className="more-label">{formatter.format(data.stargazers_count)}</div>
             </div>{' '}
           </span>
         </a>
       </div>
       <div className="body-desc">
-        Check out our bouquet of events{' '}
-        <Link className="home-anchor" target="_blank" to="https://hustles.reactplay.io/">
-          <span className="text text-secondary">here</span>
+        Check out our bouquet of{' '}
+        <Link
+          className="home-anchor"
+          target="_blank"
+          to="https://www.meetup.com/reactplay-bengaluru/events/"
+        >
+          <span className="text text-secondary">events</span>
         </Link>
       </div>
     </div>

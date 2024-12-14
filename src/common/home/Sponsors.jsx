@@ -30,6 +30,11 @@ const Sponsors = () => {
       name: 'React Summit',
       website: 'https://reactsummit.com/',
       logo: '/sponsors-partners/react-summit.png'
+    },
+    {
+      name: 'FOSS India',
+      website: 'https://indiafoss.net/',
+      logo: '/sponsors-partners/indiafoss.png'
     }
   ];
 
@@ -118,6 +123,7 @@ const Sponsors = () => {
             </a>
           ))} */}
           <a
+            aria-label="Sponsor"
             className="backers-cta"
             href="https://github.com/sponsors/reactplay"
             rel="noreferrer"

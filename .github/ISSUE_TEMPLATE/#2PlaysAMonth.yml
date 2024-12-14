@@ -2,7 +2,6 @@ name: '🔥 #2PlaysAMonth Entry'
 description: 'Add a new Play entry for the #2PlaysAMonth event.'
 title: '[#2PlaysAMonth]: '
 labels: ['#2PlaysAMonth']
-assignees: ['']
 body:
   - type: markdown
     attributes:
@@ -35,6 +34,8 @@ body:
         - label: I have read the [Contributing Guidelines](https://github.com/reactplay/react-play/blob/main/CONTRIBUTING.md)
           required: true
         - label: I want to work on this issue
+        - label: I am a Hacktoberfest contributor
+
 
   - type: checkboxes
     id: terms
