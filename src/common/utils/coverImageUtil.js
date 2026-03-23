@@ -1,4 +1,3 @@
-import FallbackImage from 'images/play-fallback-cover.png';
 import { IMAGE_EXTENSIONS, FULFILLED_STATUS } from './utilsConstants';
 
 /**
@@ -30,5 +29,5 @@ export const loadCoverImage = async (playSlug) => {
     (result) => result.status === FULFILLED_STATUS && result.value?.default
   );
 
-  return image?.value.default || FallbackImage;
+  return image?.value.default || null;
 };

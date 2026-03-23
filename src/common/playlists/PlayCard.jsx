@@ -5,6 +5,7 @@ import { BiLogoTypescript, BiLogoJavascript } from 'react-icons/bi';
 import PlayShare from './PlayShare.jsx';
 import Like from 'common/components/Like/Like';
 import userImage from 'images/user.png';
+import PlayThumbnailFallBack from './PlayThumbnailFallBack';
 
 const formatDate = (dateString) => dateString || '';
 
@@ -41,17 +42,19 @@ function PlayCard({ play, cover, likeObject }) {
   return (
     <Link className="group block" to={linkTo}>
       <div className="play-card-container max-w-sm bg-white rounded-xl overflow-hidden flex flex-col h-full">
-        {cover && (
-          <div className="relative h-48">
+        <div className="relative h-48">
+          {cover ? (
             <img alt={play.name} className="w-full h-full object-cover" src={cover} />
-            <div className="absolute inset-0 thumb-overlay pointer-events-none" />
-            <BsPlayCircleFill
-              className="absolute inset-0 m-auto z-10 opacity-0 transition-opacity duration-200 pointer-events-none"
-              color="white"
-              size={80}
-            />
-          </div>
-        )}
+          ) : (
+            <PlayThumbnailFallBack playName={play?.name} />
+          )}
+          <div className="absolute inset-0 thumb-overlay pointer-events-none" />
+          <BsPlayCircleFill
+            className="absolute inset-0 m-auto z-10 opacity-0 transition-opacity duration-200 pointer-events-none"
+            color="white"
+            size={80}
+          />
+        </div>
 
         <div className="p-5 flex flex-col flex-grow">
           <LanguageBadge />
